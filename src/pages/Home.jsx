@@ -32,7 +32,7 @@ export default function HomePage () {
                     <HeartIcon className="w-11 h-11 px-2.5 bg-blue-500 text-white rounded-md hover:scale-105 hover:cursor-pointer hover:bg-blue-700" />
                     <div className="flex flex-col">
                         <h1 className="flex flex-row text-2xl font-bold"> 
-                            VitalCare
+                            MediRecords
                         </h1>
                         <span className="text-black text-sm">Remote Health Monitoring</span>
                     </div>
@@ -70,7 +70,7 @@ export default function HomePage () {
                         </h1>
                     </div>
                     <span className="text-gray-400 flex justify-center items-center">
-                        VitalCare provides real-time remote monitoring of heart rate, SpO2, <br />  temperature, ECG, and more.
+                         MediRecords provides real-time remote monitoring of heart rate, SpO2, <br />  temperature, ECG, and more.
                         Keep your patients safe with instant alerts and <br /> comprehensive health insights.
                     </span>
                     <div className="flex gap-5 font-medium text-sm">
@@ -92,7 +92,7 @@ export default function HomePage () {
             <section className="flex flex-col items-center justify-center gap-5 py-15 px-5 bg-gray-100">
                 <header>
                     <h2 className="text-3xl font-bold">
-                        How VitalCare Works
+                        How MediRecords Works
                     </h2>
                 </header>
                 <dl className="flex items-center text-center text-gray-600 mb-10"> 
@@ -187,11 +187,11 @@ export default function HomePage () {
             </section>
 
 
-            {/*WHO USES VITALCARE*/}
+            {/*WHO USES  MEDIRECORDS*/}
             <section className="flex flex-col items-center justify-center gap-5 py-15 px-5 bg-gray-100">
                 <header>
                     <h2 className="text-3xl font-bold">
-                        Who Uses VitalCare ?
+                        Who Uses  MediRecords ?
                     </h2>
                 </header>
                 <dl className="flex items-center text-center text-gray-600 mb-10">
@@ -256,7 +256,7 @@ export default function HomePage () {
                     <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-3 justify-items-center" >
                         <div className="w-full shadow px-5 pt-10 pb-8 border border-gray-300 rounded-lg">
                             <p className="text-sm text-gray-600 italic pb-5">
-                                "VitalCare reduced our alert response time by 60%.
+                                " MediRecords reduced our alert response time by 60%.
                                 <br />
                                 Our patients are safer."
                             </p>
@@ -314,7 +314,7 @@ export default function HomePage () {
                 <article className="sm: max-w-4/5 lg: w-full bg-blue-100 flex flex-col items-center text-center gap-5 p-10 mt-5 border border-blue-300 rounded-lg">
                     <h3 className="text-3xl font-bold">Ready to Transform Patient Care?</h3>
                     <dl className="text-gray-500">
-                        Experience real-time health monitoring with VitalCare. Start montoring today and see the 
+                        Experience real-time health monitoring with  MediRecords. Start montoring today and see the 
                         <br />difference.
                     </dl>
                     <button className="flex items-center  justify-center gap-2 px-2 py-2 border border-blue-700 bg-blue-500 rounded-lg text-white">
@@ -337,7 +337,7 @@ export default function HomePage () {
                             <Mail className="w-10 h-10 px-2 rounded-full bg-blue-200 text-blue-500" />
                             <div className="flex flex-col">
                                 <h3 className="font-semibold">Email</h3>
-                                <dl className="text-gray-500">support@vitalcare.health</dl>
+                                <dl className="text-gray-500">support@medirecords.health</dl>
                             </div>
                         </div>
                         <div className="flex flex-col">
