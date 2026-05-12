@@ -9,12 +9,12 @@ export default function Footer () {
                     </Link>
                     <div className="flex flex-col">
                         <h1 className="flex flex-row text-2xl font-bold"> 
-                            VitalCare
+                            MediRecords
                         </h1>
                       </div>
                 </div>
                 <div className="text-gray-500">
-                  © 2025 VitalCare. All Rights Reserved
+                  © 2025  MediRecords. All Rights Reserved
                 </div>
             </footer>
     )
