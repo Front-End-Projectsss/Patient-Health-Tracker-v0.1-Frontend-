@@ -9,7 +9,6 @@ const [formData, setFormData] = useState({
     type: "",
     time: "",
     duration: "",
-    status: "",
     date: "",
 });
 
@@ -87,7 +86,7 @@ return (
                 <InputComponent
                 label="Timing"
                 placeholder="9:00 AM"
-                type="text"
+                type="time"
                 value={formData.time} //makes the input display what is in the input box
                 onChange={(e) => { //runs everytime the user types a character
                     setFormData({...formData, time: e.target.value });
