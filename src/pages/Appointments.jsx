@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { CalendarIcon } from "lucide-react";
 import IndividualAppointment from "../components/Individualappointment";
 import AppointmentForm from "../components/AppointmentForm";
@@ -64,11 +64,14 @@ export default function Appointments ({ appointmentsList, setAppointmentsList })
         const missedAppointments = appointmentsList.filter(newAppointment => getStatus(newAppointment) === "missed")
         
 
-        const storedAppointments = localStorage.getItem("patientsAppointments");
-        const storedAppointmentsObj = storedAppointments ? JSON.parse(storedAppointments) : {};
+        useEffect(() => {
+            const storedAppointments = localStorage.getItem("patientsAppointments");
+            const storedAppointmentsObj = storedAppointments 
+                ? JSON.parse(storedAppointments) 
+                : {};
 
-        setAppointmentsList(Object.values(storedAppointmentsObj).flat());
-
+            setAppointmentsList(Object.values(storedAppointmentsObj).flat());
+        }, []);
         const markAsCompleted = (id) => {
             setAppointmentsList(prev => 
                 prev.map(appointment => appointment.id === id ? 
@@ -84,7 +87,6 @@ export default function Appointments ({ appointmentsList, setAppointmentsList })
                     <AppointmentForm 
                     setAppointmentsList =  {setAppointmentsList}
                     setIsFormOpen = {setIsFormOpen}
-                    patientsArray={patientsArray}
                     />
                     </div>
                 )}       
